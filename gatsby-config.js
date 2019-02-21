@@ -1,11 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `A.J Aguasin`,
+    title: `< A.J. Aguasin />`,
     description: `A.J. Aguasin's personal website.`,
-    author: `@gatsbyjs`
+    author: `A.J. Aguasin`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-material-ui`
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,8 +25,6 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -30,11 +40,8 @@ module.exports = {
     {
       resolve: "gatsby-source-graphql",
       options: {
-        // The top level query type, can be anything you want!
         typeName: "GCMS",
-        // The field you'll query against, can also be anything you want.
         fieldName: "gcms",
-        // Your API endpoint, available from the dashboard and settings window.
         url:
           "https://api-uswest.graphcms.com/v1/cjs55yanw3ox701gfa0c8pbev/master"
       }

@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  min-width: 100px;
+  text-align: center;
+}
+
+.menuItem {
+  min-width: 100px;
+}

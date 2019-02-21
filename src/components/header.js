@@ -1,42 +1,40 @@
+import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
-
-const Header = ({ siteTitle }) => (
-  <header
+import Grid from "@material-ui/core/Grid";
+import picture from "../images/photo.jpg";
+const header = ({ siteTitle }) => (
+  <div
     style={{
-      background: `coral`,
-      marginBottom: `0`
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center"
     }}
   >
-    <div
+    <Link
+      to="/"
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`
+        textDecoration: `none`
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+      {siteTitle}
+    </Link>
+    <Link to="/">
+      <img
+        alt="Picture of AJ"
+        src={picture}
+        style={{ width: 100, height: 100, borderRadius: 50, margin: 0 }}
+      />
+    </Link>
+  </div>
 );
 
-Header.propTypes = {
+header.propTypes = {
   siteTitle: PropTypes.string
 };
 
-Header.defaultProps = {
+header.defaultProps = {
   siteTitle: ``
 };
 
-export default Header;
+export default header;

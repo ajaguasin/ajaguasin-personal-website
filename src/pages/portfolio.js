@@ -1,11 +1,16 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 
 const PortfolioPage = () => (
   <Layout>
-    <div>
+    <div
+      style={{
+        flex: "1 0 auto",
+        marginTop: "auto",
+        marginBottom: "auto"
+      }}
+    >
       <h1>My portfolio</h1>
-      <p> Lorem ipsum </p>
     </div>
   </Layout>
 );
