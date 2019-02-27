@@ -4,10 +4,8 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Header from "../header";
 import "./layout.css";
-import containerStyles from "../../styles/container.module.css";
-import SEO from "../seo";
 import Menu from "../Menu/menu";
-import { Paper, Divider, Icon } from "@material-ui/core";
+import { Paper, Divider } from "@material-ui/core";
 
 const Layout = ({ children }) => (
   <StaticQuery

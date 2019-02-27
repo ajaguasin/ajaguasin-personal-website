@@ -9,12 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`
-      }
-    },
+
     {
       resolve: `gatsby-plugin-material-ui`
     },
@@ -33,8 +28,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+        display: `minimal-ui`
       }
     },
     {
@@ -46,8 +40,5 @@ module.exports = {
           "https://api-uswest.graphcms.com/v1/cjs55yanw3ox701gfa0c8pbev/master"
       }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ]
 };

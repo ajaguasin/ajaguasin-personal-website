@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import Grid from "@material-ui/core/Grid";
 import picture from "../images/photo.jpg";
 const header = ({ siteTitle }) => (
   <div
@@ -21,7 +20,7 @@ const header = ({ siteTitle }) => (
     </Link>
     <Link to="/">
       <img
-        alt="Picture of AJ"
+        alt="AJ"
         src={picture}
         style={{ width: 100, height: 100, borderRadius: 50, margin: 0 }}
       />
