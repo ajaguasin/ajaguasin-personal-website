@@ -48,12 +48,21 @@ const Layout = ({ children }) => (
             }}
           >
             <Divider variant="middle" />
-            <a href="https://www.linkedin.com/in/ajaguasin/">LinkedIn</a>
-            <a href="https://github.com/ajaguasin">GitHub</a>
-            <a href="https://www.youtube.com/channel/UC3zcETy3bUKKA0TnjzNfFww/">
+            <a href="https://www.linkedin.com/in/ajaguasin/" target="_blank">
+              LinkedIn
+            </a>
+            <a href="https://github.com/ajaguasin" target="_blank">
+              GitHub
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC3zcETy3bUKKA0TnjzNfFww/"
+              target="_blank"
+            >
               YouTube
             </a>
-            <a href="https://www.instagram.com/aaguasin/">Instagram</a>
+            <a href="https://www.instagram.com/aaguasin/" target="_blank">
+              Instagram
+            </a>
           </div>
         </Paper>
         {children}
