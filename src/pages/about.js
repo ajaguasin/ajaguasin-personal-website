@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/Layout/layout";
-import SEO from "../components/seo";
+import SEO from "../components/Seo/seo";
 import { Grow, Grid } from "@material-ui/core";
 import {
   FitnessCenter,

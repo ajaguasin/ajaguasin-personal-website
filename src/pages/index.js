@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout/layout";
-import { Grow } from "@material-ui/core";
-import SEO from "../components/seo";
+import { Button, Divider } from "@material-ui/core";
+import SEO from "../components/Seo/seo";
+import containerStyles from "../styles/container.module.css";
 
 const IndexPage = () => (
   <Layout>
@@ -13,20 +14,43 @@ const IndexPage = () => (
         marginBottom: "auto"
       }}
     >
-      <Grow in={true} timeout={1000}>
-        <div style={{ display: "inline-block", textAlign: "left", width: 450 }}>
-          <span style={{ fontSize: "2rem" }}>Hello, I'm A.J.</span>
-          <p style={{ fontSize: "4rem", lineHeight: "4rem" }}>
+      <div
+        style={{
+          display: "inline-block",
+          textAlign: "left",
+          width: 450
+        }}
+      >
+        <div
+          className={containerStyles.animationEffect}
+          // style={{ display: "inline-block" }}
+        >
+          <p style={{ fontSize: "1rem" }}>Hello, I'm A.J.</p>
+          <p style={{ fontSize: "1rem", lineHeight: "1rem" }}>
             I write web and mobile applications.
           </p>
-          <div>
-            <span>
-              I'm a full stack developer who delivers dynamic user interfaces
-              and robust backend services
-            </span>
-          </div>
+          <p>
+            I'm a full stack developer
+            <br /> who delivers dynamic user interfaces
+            <br />
+            and robust backend services
+          </p>
         </div>
-      </Grow>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            alignItems: "flex-start"
+          }}
+        >
+          <Button variant="outlined" style={{ marginBottom: "1rem" }}>
+            Learn more
+          </Button>
+          <Button variant="outlined">See Works</Button>
+        </div>
+      </div>
     </div>
   </Layout>
 );

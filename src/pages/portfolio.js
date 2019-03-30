@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout/layout";
 import { Grow, Grid, Card, CardHeader, CardMedia } from "@material-ui/core";
-import SEO from "../components/seo";
+import SEO from "../components/Seo/seo";
 
 const PortfolioPage = () => (
   <Layout>
@@ -9,7 +9,7 @@ const PortfolioPage = () => (
 
     <div
       style={{
-        flex: "1 0 auto",
+        flex: "1 0 ",
         marginTop: "auto",
         marginBottom: "auto"
       }}

@@ -1,10 +1,12 @@
 .link {
   text-decoration: none;
   min-width: 100px;
-  text-align: center;
+  text-align: right;
   font-family: georgia, serif;
+  font-size: 11pt;
 }
 
 .menuItem {
   min-width: 100px;
+  padding-right: 0;
 }

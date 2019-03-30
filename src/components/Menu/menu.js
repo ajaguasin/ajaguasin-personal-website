@@ -11,7 +11,8 @@ const Menu = () => (
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "flex-end",
+        textAlign: "right"
       }}
     >
       <MenuItem className={menuStyles.menuItem}>
